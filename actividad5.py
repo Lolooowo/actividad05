@@ -5,7 +5,7 @@ class Estudiante:
         self.carrera = carrera
         self.nota = nota
     def informacion(self):
-        print(f"El estudiante {self.nombre} de la carrera: {self.carrera} que se identifica con el carné: {self.carne} su nota es : {self.nota}")
+        print(f"El estudiante {self.nombre}. De la carrera: {self.carrera}. Que se identifica con el carné: {self.carne} y su nota es : {self.nota}")
 Estudiantes = []
 try:
     while True:
