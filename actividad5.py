@@ -18,7 +18,7 @@ while True:
             nombre = input("Ingrese el nombre: ")
             carne = input("Ingrese el carne: ")
             carrera = input("Ingrese el carrera: ")
-            nota = input("Ingrese el nota final del estudiante: ")
+            nota = int(input("Ingrese el nota final del estudiante: "))
             nuevoEstudiante = Estudiante(nombre, carne, carrera, nota)
             Estudiantes.append(nuevoEstudiante)
             break
@@ -28,3 +28,11 @@ while True:
                 if buscarEstudiante == estudiante.carne:
                     estudiante.informacion()
             break
+        case 3:
+            print("El promedio de las notas de todos los estudiantes ingresados son: ")
+            promedio = 0
+            for estudiante in Estudiantes:
+                promedio += estudiante.nota
+            promedio /= len(Estudiantes)
+            print(f"El promedio es: {promedio}")
+
